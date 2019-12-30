@@ -1,0 +1,19 @@
+.block__btn {
+  background-color: $white;
+  color: $black;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 119px 15px 18px;
+  position: relative;
+
+  .block__btn__line {
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    top: 21px;
+    left: 84px;
+  }
+}

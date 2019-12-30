@@ -1,0 +1,17 @@
+.footer {
+  p {
+    border-bottom: 1px solid red;
+    position: relative;
+    padding-bottom: 10px;
+    width: 200px;
+
+    &:before {
+      content: '';
+      border-bottom: 4px solid red;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20%;
+    }
+  }
+}
