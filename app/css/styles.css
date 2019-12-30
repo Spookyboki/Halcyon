@@ -431,7 +431,7 @@ a {
     position: relative; }
     .block__news .block__col .block__btn {
       position: absolute;
-      bottom: -73px; }
+      bottom: -75px; }
   @media screen and (max-width: 1610px) {
     .block__news .block__news__wrapper {
       padding: 0 183px; } }
@@ -490,6 +490,68 @@ a {
   @media (max-width: 767px) {
     .block__box--width {
       padding: 0; } }
+
+.block__hashtag {
+  padding-top: 140px; }
+  .block__hashtag .block__hashtag__wrapper {
+    padding: 0 274px 0 272px; }
+  .block__hashtag .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; }
+    .block__hashtag .image .block__inner {
+      position: absolute;
+      display: none;
+      align-items: center;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      padding: 16px 28px 13px 10px; }
+      .block__hashtag .image .block__inner .fa {
+        font-size: 20px;
+        color: #2aaeb3;
+        padding-right: 6px; }
+      .block__hashtag .image .block__inner span {
+        font-size: 16px;
+        font-family: 'Lato', sans-serif; }
+      .block__hashtag .image .block__inner .block__icon--padded {
+        padding-right: 29px; }
+    .block__hashtag .image .block__inner--margin {
+      margin-left: -1px; }
+  .block__hashtag .block__images--floated {
+    float: right; }
+  .block__hashtag .block__title__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 73px; }
+  .block__hashtag .block__btn {
+    background-color: #2aaeb3;
+    color: #fff;
+    padding: 13px 93px 15px 16px; }
+    .block__hashtag .block__btn .block__btn__line {
+      background-color: #fff;
+      left: 125px; }
+  .block__hashtag .block__title {
+    color: #2aaeb3;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-left: 2px;
+    margin-top: -21px; }
+  .block__hashtag .block__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));
+    grid-template-rows: repeat(2, 321px);
+    grid-gap: 30px; }
+  .block__hashtag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.block__inner--show {
+  display: flex !important; }
 
 .footer p {
   border-bottom: 1px solid red;
