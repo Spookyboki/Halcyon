@@ -15,12 +15,14 @@
 @import './objects/text';
 @import './objects/links';
 @import './objects/icons';
+@import './objects/logo';
 @import './objects/block_button';
 
 //Layout
 // --------
 @import './layout/header';
 @import './layout/hero';
+@import './layout/standards';
 @import './layout/news';
 @import './layout/hashtag';
 @import './layout/footer';

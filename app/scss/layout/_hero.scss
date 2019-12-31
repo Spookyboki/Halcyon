@@ -1,4 +1,106 @@
-//sass-lint:disable no-ids
-#hero {
- 
+.block__hero {
+  height: 970px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .block__hero__wrapper {
+    padding: 0 273px;
+  }
+
+  .block__btn {
+    background-color: $blue;
+    color: $white;
+    padding: 13px 73px 15px 25px;
+    word-spacing: 0.16em;
+    margin-left: 3px;
+
+    .block__btn__line {
+      background-color: $white;
+      top: 22px;
+      left: 144px;
+    }
+  }
+
+  .block__box {
+    padding-top: 293px;
+  }
+
+  h1 {
+    color: $black;
+    font-size: 63.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+    padding-bottom: 23px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: $black;
+    padding-left: 3px;
+    padding-bottom: 39px;
+  }
+
+  @media screen and (max-width: 1610px) {
+
+    .block__hero__wrapper {
+      padding: 0 183px;
+    }
+  }
+
+  @media screen and (max-width: 1322px) {
+
+    .block__hero__wrapper {
+      padding: 0 140px;
+    }
+  }
+
+  @media screen and (max-width: 1180px) {
+
+    .block__hero__wrapper {
+      padding: 0 64px;
+    }
+  }
+
+  @include breakpoint (tablet) {
+    background-position: 35%;
+
+    .block__hero__wrapper {
+      padding: 0 22px;
+    }
+  }
+
+  @include breakpoint (phone) {
+    background-position: 30%;
+    height: 600px;
+
+    .block__hero__wrapper {
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 34px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .block__box {
+      padding-top: 200px;
+    }
+
+    .block__btn {
+      padding: 11px 73px 13px 25px;
+      font-size: 14px;
+  
+      .block__btn__line {
+        top: 19px;
+      }
+    }
+  }
 }

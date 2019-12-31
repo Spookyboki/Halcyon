@@ -1,0 +1,136 @@
+.block__standards {
+  height: 700px;
+  padding-top: 150px;
+
+  .block__box {
+    display: flex;
+    align-items: center;
+  }
+
+  .block__standrads__wrapper {
+    padding: 0 277px;
+  }
+
+  .block__left {
+    background-color: $black;
+    padding-bottom: 82px;
+    margin-right: 26px;
+  }
+
+  h1 {
+    color: $white;
+    padding-top: 132px;
+    padding-bottom: 59px;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-left: 63px;
+    width: 90%;
+    line-height: 1.2;
+  }
+
+  .block__btn {
+    background-color: $white;
+    color: $black;
+    padding: 12px 62px 15px 18px;
+    margin-left: 65px;
+
+    .block__btn__line {
+      background-color: $black;
+      top: 22px;
+      left: 196px;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    color: $black;
+    margin-top: 11px;
+    line-height: 1.5;
+    margin-left: -10px;
+  }
+
+  @media screen and (max-width: 1643px){
+
+    .block__standrads__wrapper {
+      padding: 0 183px;
+    }
+  }
+
+  @media screen and (max-width: 1460px){
+
+    .block__standrads__wrapper {
+      padding: 0 64px;
+    }
+  }
+
+  @include breakpoint (tablet) {
+
+    .block__standrads__wrapper {
+      padding: 0 22px;
+    }
+
+    h1 {
+      font-size: 38px;
+      padding-top: 45px;
+      width: 100%;
+      padding-left: 38px;
+      padding-right: 113px;
+    }
+
+    .block__btn {
+      margin-left: 25px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  @include breakpoint (phone) {
+    padding-top: 80px;
+    height: 530px;
+
+    .block__standrads__wrapper {
+      padding: 0 20px;
+    }
+
+    .block__left {
+      margin-right: 0;
+      padding-bottom: 58px;
+    }
+
+    .block__box {
+      display: block;
+    }
+
+    h1 {
+      font-size: 24px;
+      padding-top: 45px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 38px;
+    }
+
+    .block__btn {
+      margin-left: 20px;
+      font-size: 12px;
+      padding: 12px 45px 10px 13px;
+
+      .block__btn__line {
+        top: 19px;
+        left: 145px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      margin-left: 0;
+      text-align: center;
+      margin-top: 40px;
+      border-bottom: 1px solid $light-grey;
+      padding-bottom: 20px;
+    }
+  }
+}
