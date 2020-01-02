@@ -24,4 +24,12 @@ $('document').ready(function() {
   $('.block__moments__slider').slick({
 
   })
+
+  let momentsSlider = $('.block__moments__slider');
+  let nextBtn = $('.slick-next');
+  let prevBtn = $('.slick-prev');
+
+  momentsSlider.find($(prevBtn)).html('<span class="s s-arrow-left"><span class="hide">hide</span></span>');
+
+  momentsSlider.find($(nextBtn)).html('<span class="s s-arrow-right"><span class="hide">hide</span></span>');
 });

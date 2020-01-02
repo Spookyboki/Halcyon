@@ -1,0 +1,20 @@
+.block__title {
+  border-bottom: 2px solid $white;
+  padding-bottom: 8px;
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -2px;
+  margin-bottom: 90px;
+  font-size: 36px;
+
+  &:before {
+    content: '';
+    border-bottom: 7px solid $white;
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    width: 23%;
+  }
+}
