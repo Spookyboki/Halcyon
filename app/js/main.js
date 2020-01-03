@@ -122,13 +122,20 @@ $('document').ready(function() {
   //slider for block__latest
   $('.block__latest__slider').slick({
     centerMode: true,
-    centerPadding: '30px',
+    centerPadding: '100px',
     slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true,
     variableWidth: true,
     variableHeight: true
   });
+
+
+  let latestSlider = $('.block__latest__slider').find('.slick-track');
+
+  latestSlider.addClass('block__latest__slider--left');
+
+
 });
 
 

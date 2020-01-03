@@ -670,7 +670,8 @@ a {
     height: 501px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    margin-right: 30px; }
   .block__latest .block__latest__title-box {
     display: flex;
     justify-content: space-between;
@@ -696,6 +697,9 @@ a {
 
 .block__latest__wrapper {
   padding: 0 273px; }
+
+.block__latest__slider--left {
+  left: -346px; }
 
 .block__moments {
   background-color: #f9f9f9;

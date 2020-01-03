@@ -11,7 +11,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-right: 30px;
   }
+
+
 
   .block__latest__title-box {
     display: flex;
@@ -48,4 +51,8 @@
 
 .block__latest__wrapper {
   padding: 0 273px;
+}
+
+.block__latest__slider--left {
+  left: -346px;
 }
