@@ -133,8 +133,8 @@
 .block__box--width {
   padding: 0 69px 0 72px;
 
-  @media screen and (max-width: 1610px){
-    padding: 0 63px 0 63px;
+  @media screen and (max-width: 1610px) {
+    padding: 0 63px;
 
     .block__image {
       min-width: 210px;

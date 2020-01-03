@@ -3,7 +3,7 @@
   height: 711px;
 
   .block__hashtag__wrapper {
-    padding: 0 274px 0 272px
+    padding: 0 274px 0 272px;
   }
 
   .image {
@@ -86,21 +86,21 @@
     object-fit: cover;
   }
 
-  @media screen and (max-width: 1920px){
+  @media screen and (max-width: 1920px) {
 
     .block__images {
       grid-template-rows: repeat(2, 321px);
     }
   }
 
-  @media screen and (max-width: 1610px){
+  @media screen and (max-width: 1610px) {
 
     .block__hashtag__wrapper {
       padding: 0 183px;
     }
   }
 
-  @media screen and (max-width: 1180px){
+  @media screen and (max-width: 1180px) {
 
     .block__hashtag__wrapper {
       padding: 0 64px;

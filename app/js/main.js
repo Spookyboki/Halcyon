@@ -78,6 +78,23 @@ $('document').ready(function() {
   prev.html('<span class="s s-arrow-left"><span class="hide">hide</span></span>');
 
   next.html('<span class="s s-arrow-right"><span class="hide">hide</span></span>');
+
+  //header dropdown
+  let hamburger = $('.hamburger__logo');
+  let dropMenu = $('.block__header--nav');
+
+  hamburger.on('click', () => {
+
+    hamburger.toggleClass('block__header--open');
+
+    if (hamburger.hasClass('block__header--open')) {
+      dropMenu.addClass('block__header--down');
+    }
+
+    else {
+      dropMenu.removeClass('block__header--down');
+    }
+  })
 });
 
 
