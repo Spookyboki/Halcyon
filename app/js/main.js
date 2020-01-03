@@ -45,33 +45,56 @@ $('document').ready(function() {
     variableHeight: true
   });
 
-  let centerSlide = $('.block__center-slick__slider').find('.slide');
+  let slide = $('.block__center-slick__slider').find('.slide');
+  let slideName = $('.block__center-slick__slider').find('.block__latest__slider__name');
+  let slideTxt = $('.block__center-slick__slider').find('.block__center-slick__txt');
+  let currentSlide = $('.block__center-slick__slider').find('.slick-center');
+
   let prev = $('.block__center-slick__slider').find('.slick-prev');
   let next = $('.block__center-slick__slider').find('.slick-next');
 
-  let center = $('.block__center-slick__slider').find('.slide');
-  //console.log(centerSlide.length);
+
+  //removing shadow, text and name from slider and adding the same on current
+  //activie one
+  slide.addClass('block__center-slick--shadow');
+  slideName.addClass('block__center-slick--no-name');
+  slideTxt.addClass('block__center-slick--no-txt');
+
+  currentSlide.removeClass('block__center-slick--shadow');
+  currentSlide.find('.block__latest__slider__name').removeClass('block__center-slick--no-name');
+  currentSlide.find('.block__center-slick__txt').removeClass('block__center-slick--no-txt');
 
   next.on('click', () => {
 
-    for (let i = 0; i < center.length; i++) {
+    slide.addClass('block__center-slick--shadow');
+    slideName.addClass('block__center-slick--no-name');
+    slideTxt.addClass('block__center-slick--no-txt');
 
-      if (!$(center).hasClass('slick-active')) {
-        console.log($(this));
-        //$(this).addClass('only');
-      }
-    }
+    let current = $('.block__center-slick__slider').find('.slick-center');
+    current.removeClass('block__center-slick--shadow');
 
+    let curSlide = $(current).find('.block__center-slick--no-name');
+    curSlide.removeClass('block__center-slick--no-name');
 
+    let curTxt = $(current).find('.block__center-slick--no-txt');
+    curTxt.removeClass('block__center-slick--no-txt');
 
-    let txt = $('.block__center-slick__txt');
-    txt.removeClass('block__center-slick__txt--show');
+  });
 
-    let current = centerSlide.find('.slick-center');
-    //console.log(current);
+  prev.on('click', () => {
 
-    let curTxt = current.find('.block__center-slick__txt');
-    curTxt.addClass('block__center-slick__txt--show');
+    slide.addClass('block__center-slick--shadow');
+    slideName.addClass('block__center-slick--no-name');
+    slideTxt.addClass('block__center-slick--no-txt');
+
+    let current = $('.block__center-slick__slider').find('.slick-center');
+    current.removeClass('block__center-slick--shadow');
+
+    let curSlide = $(current).find('.block__center-slick--no-name');
+    curSlide.removeClass('block__center-slick--no-name');
+
+    let curTxt = $(current).find('.block__center-slick--no-txt');
+    curTxt.removeClass('block__center-slick--no-txt');
 
   });
 
@@ -95,6 +118,17 @@ $('document').ready(function() {
       dropMenu.removeClass('block__header--down');
     }
   })
+
+  //slider for block__latest
+  $('.block__latest__slider').slick({
+    centerMode: true,
+    centerPadding: '30px',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: true,
+    variableWidth: true,
+    variableHeight: true
+  });
 });
 
 

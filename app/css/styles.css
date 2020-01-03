@@ -661,6 +661,42 @@ a {
         .block__hero .block__btn .block__btn__line {
           top: 19px; } }
 
+.block__latest {
+  padding-top: 134px; }
+  .block__latest .slider {
+    width: 100%; }
+  .block__latest .slide {
+    width: 670px;
+    height: 501px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .block__latest .block__latest__title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px; }
+  .block__latest .block__btn {
+    background-color: #2aaeb3;
+    color: #fff;
+    padding: 14px 90px 15px 19px; }
+    .block__latest .block__btn .block__btn__line {
+      width: 43px;
+      background-color: #fff;
+      left: 111px; }
+  .block__latest .block__title {
+    border-bottom: 2px solid #111;
+    margin-left: 1px;
+    margin-bottom: 0;
+    margin-top: -1px; }
+    .block__latest .block__title:before {
+      content: '';
+      border-bottom: 7px solid #111;
+      width: 17%; }
+
+.block__latest__wrapper {
+  padding: 0 273px; }
+
 .block__moments {
   background-color: #f9f9f9;
   padding-top: 31px; }
@@ -783,11 +819,12 @@ a {
 
 .block__center-slick {
   padding-top: 153px;
-  padding-bottom: 156px;
+  padding-bottom: 99px;
   position: relative; }
   .block__center-slick .block__title {
     border-bottom: 2px solid #111;
-    margin-bottom: 47px; }
+    margin-bottom: 49px;
+    padding-bottom: 5px; }
     .block__center-slick .block__title:before {
       content: '';
       border-bottom: 7px solid #111;
@@ -796,43 +833,67 @@ a {
       left: 0px;
       width: 10%; }
   .block__center-slick .block__center-slick__txt {
-    display: none;
+    display: block;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    width: 58%;
+    width: 189%;
     letter-spacing: 0.01em;
     line-height: 1.7;
     margin: 0 auto;
     margin-top: 26px;
     position: absolute;
     z-index: 10;
-    top: 20px; }
+    bottom: -164px;
+    left: -186px; }
     .block__center-slick .block__center-slick__txt a {
       color: #2aaeb3;
       letter-spacing: 0.02em; }
   .block__center-slick .block__center-slick__slider {
     position: relative; }
+    .block__center-slick .block__center-slick__slider .slick-list {
+      padding-bottom: 200px !important; }
     .block__center-slick .block__center-slick__slider .slide {
       height: 521px;
       width: 383px;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      position: relative;
+      transition: all 0.5s; }
+      .block__center-slick .block__center-slick__slider .slide .block__latest__slider__name {
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        height: 73px;
+        background-color: #fff;
+        width: 236px;
+        text-align: center;
+        padding-top: 23px; }
+        .block__center-slick .block__center-slick__slider .slide .block__latest__slider__name span {
+          font-size: 24px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          margin-left: -22px; }
     .block__center-slick .block__center-slick__slider .s-arrow-right {
       position: absolute;
       right: 0;
-      top: 47.5%;
+      top: 31.5%;
       z-index: 5;
       font-size: 13px;
-      right: -121px; }
+      right: -145px;
+      font-size: 25px;
+      box-shadow: 0px 0px 5px 0px rgba(151, 151, 151, 0.3);
+      padding: 20px 24px 23px 23px; }
     .block__center-slick .block__center-slick__slider .s-arrow-left {
       position: absolute;
       left: 0;
-      top: 47.5%;
+      top: 31.5%;
       z-index: 5;
-      left: -117px;
-      font-size: 13px; }
+      left: -141px;
+      font-size: 25px;
+      padding: 20px 23px 23px 24px;
+      box-shadow: 0px 0px 5px 0px rgba(151, 151, 151, 0.3); }
     .block__center-slick .block__center-slick__slider .slick-current {
       height: 572px;
       width: 420px;
@@ -848,6 +909,8 @@ a {
     .block__center-slick .block__center-slick__slider .slide {
       height: 370px;
       width: 383px; }
+    .block__center-slick .block__center-slick__slider .slick-list {
+      padding: 0 50px 200px 50px !important; }
     .block__center-slick .block__center-slick__slider .slick-current {
       height: 438px;
       margin: 0 20px; } }
@@ -855,27 +918,33 @@ a {
     .block__center-slick {
       padding-top: 75px; }
       .block__center-slick .block__center-slick__txt {
-        width: 100%; }
+        width: 100%;
+        left: auto;
+        bottom: -290px; }
       .block__center-slick .block__title {
         font-size: 28px;
-        margin-bottom: 86px; } }
+        margin-bottom: 86px; }
+      .block__center-slick .block__center-slick__slider .slick-list {
+        padding: 0 50px 340px 50px !important; } }
   @media (max-width: 767px) {
     .block__center-slick {
       padding-top: 60px;
       padding-bottom: 64px; }
       .block__center-slick .block__center-slick__txt {
         width: 100%;
-        font-size: 12px; }
+        font-size: 12px;
+        left: auto;
+        padding: 0 10px; }
       .block__center-slick .block__title {
         font-size: 19px;
-        margin-bottom: 50px; }
+        margin-bottom: 100px; }
       .block__center-slick .block__center-slick__slider .s-arrow-right {
         right: 0;
-        top: -14px;
+        top: -70px;
         right: 0; }
       .block__center-slick .block__center-slick__slider .s-arrow-left {
         left: 0;
-        top: -14px;
+        top: -70px;
         left: 0; }
       .block__center-slick .block__center-slick__slider .slide {
         height: 370px;
@@ -889,13 +958,22 @@ a {
   padding: 0 277px; }
   @media screen and (max-width: 1630px) {
     .block__center-slick__wrapper {
-      padding: 0 140px; } }
+      padding: 0 180px; } }
   @media (max-width: 767px) {
     .block__center-slick__wrapper {
       padding: 0 20px; } }
 
 .block__center-slick__txt--show {
   display: block !important; }
+
+.block__center-slick--shadow {
+  box-shadow: inset 0px 0px 300px 200px rgba(255, 255, 255, 0.5); }
+
+.block__center-slick--no-name {
+  display: none !important; }
+
+.block__center-slick--no-txt {
+  display: none !important; }
 
 .block__standards {
   height: 700px;
