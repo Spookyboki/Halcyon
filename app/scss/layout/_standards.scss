@@ -1,7 +1,7 @@
 .block__standards {
   height: 700px;
-  padding-top: 150px;
-  margin-bottom: -36px;
+  padding-top: 32px;
+  margin-bottom: -153px;
 
   .block__box {
     display: flex;
@@ -90,7 +90,7 @@
   }
 
   @include breakpoint (phone) {
-    padding-top: 80px;
+    padding-top: 0;
     height: 530px;
     margin-bottom: 0px;
 

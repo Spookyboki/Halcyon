@@ -132,9 +132,36 @@ $('document').ready(function() {
 
 
   let latestSlider = $('.block__latest__slider').find('.slick-track');
-
   latestSlider.addClass('block__latest__slider--left');
 
+  let lateSlide = $('.block__latest__slider').find('.slide');
+
+  for (let i = 0; i < lateSlide.length; i++) {
+
+    $(lateSlide[i]).mouseover((e) => {
+
+      const inner = $(e.currentTarget).find('.block__latest__slider__pop');
+      inner.addClass('block__latest__slider__pop--show');
+      inner.addClass('block__latest__slider__pop--shadow');
+      $(e.currentTarget).addClass('block__latest__slider__slide--shadow');
+    })
+  }
+
+  for (let i = 0; i < lateSlide.length; i++) {
+
+    $(lateSlide[i]).mouseout((e) => {
+
+      const inner = $(e.currentTarget).find('.block__latest__slider__pop');
+      inner.removeClass('block__latest__slider__pop--show');
+      inner.removeClass('block__latest__slider__pop--shadow');
+      $(e.currentTarget).removeClass('block__latest__slider__slide--shadow');
+
+    })
+  }
+
+  $('.block__latest__slider').find('.slick-prev').html('<span class="s s-arrow-left"><span class="hide">hide</span></span>');
+
+  $('.block__latest__slider').find('.slick-next').html('<span class="s s-arrow-right"><span class="hide">hide</span></span>');
 
 });
 

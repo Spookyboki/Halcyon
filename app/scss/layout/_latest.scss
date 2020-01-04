@@ -5,6 +5,10 @@
     width: 100%;
   }
 
+  .slick-list {
+    padding-bottom: 100px !important;
+  }
+
   .slide {
     width: 670px;
     height: 501px;
@@ -12,15 +16,111 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 30px;
+    position: relative;
+
+    .block__latest__slider__info {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      height: 63px;
+      width: 450px;
+      background-color: $white;
+      display: flex;
+      justify-content: space-between;
+      padding: 28px 22px 0px 9px;
+    }
+
+    .block__latest__slider__text,
+    .block__latest__slider__price {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .block__latest__slider__price {
+      color: $blue;
+    }
+
+    .block__latest__slider__pop {
+      position: absolute;
+      left: 0;
+      width: 670px;
+      height: 66px;
+      bottom: -66px;
+      background-color: $white;
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      padding: 21px 0 0 7px;
+      font-size: 16px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+
+      li {
+        letter-spacing: -0.01em;
+        border-right: 1px solid $spliter;
+        padding: 5px 15px 5px 0;
+
+        &:nth-child(2) {
+          padding-left: 14px;
+          letter-spacing: 0.01em;
+        }
+
+        &:nth-child(3) {
+          padding-left: 8px;
+          letter-spacing: -0.002em;
+          padding-right: 11px;
+        }
+
+        &:last-child {
+          padding-left: 15px;
+          letter-spacing: -0.004em;
+          padding-right: 0;
+          border: none;
+        }
+      }
+    }
   }
 
+  .s-arrow-right {
+    position: absolute;
+    right: 42px;
+    top: 36%;
+    z-index: 5;
+    font-size: 13px;
+    font-size: 25px;
+    padding: 20px 24px 23px 23px;
+    background-color: $white;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  .s-arrow-left {
+    position: absolute;
+    left: 42px;
+    top: 36%;
+    z-index: 5;
+    font-size: 25px;
+    padding: 20px 23px 23px 24px;
+    background-color: $white;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
 
 
   .block__latest__title-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .block__btn {
@@ -47,12 +147,120 @@
       width: 17%;
     }
   }
+
+
+  @include breakpoint (phone) {
+
+    .slick-list {
+      padding-bottom: 200px !important;
+    }
+
+    .block__title {
+      font-size: 22px;
+    }
+
+    .block__latest__title-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 68px;
+      flex-wrap: wrap;
+    }
+
+    .block__title {
+      margin-top: 25px;
+    }
+
+    .block__btn {
+      margin-top: 25px;
+    }
+
+    .s-arrow-right {
+      /* top: 5%;
+      right: 20px;
+      padding: 1px 24px 5px 23px; */
+      display: none;
+    }
+
+    .s-arrow-left {
+      /* top: 5%;
+      left: 20px;
+      padding: 1px 23px 5px 24px; */
+      display: none;
+    }
+
+    .slide {
+      width: 320px;
+      height: 320px;
+      margin-right: 20px;
+
+      .block__latest__slider__info {
+        width: 100%;
+
+        .block__latest__slider__text {
+          font-size: 12px;
+        }
+      }
+
+      .block__latest__slider__pop {
+        width: 320px;
+        height: 130px;
+        bottom: -131px;
+      }
+
+      ul {
+        font-size: 12px;
+        width: 100%;
+        display: block;
+        padding-right: 40px;
+
+        li {
+          border-right: none;
+          padding-left: 0 !important;
+          border-bottom: 1px solid $spliter;
+        }
+      }
+    }
+  }
 }
 
 .block__latest__wrapper {
   padding: 0 273px;
+
+  @media screen and (max-width: 1322px){
+    padding: 0 140px;
+  }
+
+  @media screen and (max-width: 1180px){
+    padding: 0 64px;
+  }
+
+  @include breakpoint (tablet) {
+    padding: 0 22px;
+  }
+
+  @include breakpoint (phone) {
+    padding: 0 20px;
+  }
 }
 
 .block__latest__slider--left {
-  left: -346px;
+  left: -350px;
+
+  @media screen and (max-width: 1454px){
+    left: 0;
+  }
+}
+
+.block__latest__slider__pop--show {
+  display: block !important;
+}
+
+.block__latest__slider__pop--shadow {
+  box-shadow: 0px 5px 12px -5px rgba(151,151,151,1);
+  transition: all 1s;
+}
+
+.block__latest__slider__slide--shadow {
+  box-shadow: 0px 2px 24px -5px rgba(151,151,151,1);
 }
