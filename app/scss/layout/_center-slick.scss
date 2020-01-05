@@ -54,6 +54,7 @@
       background-size: cover;
       position: relative;
       transition: all 0.5s;
+      margin-top: -10px;
 
       .block__latest__slider__name {
         position: absolute;
@@ -61,7 +62,7 @@
         left: -1px;
         height: 73px;
         background-color: $white;
-        width: 236px;
+        width: 234px;
         text-align: center;
         padding-top: 23px;
 
@@ -72,6 +73,15 @@
           margin-left: -22px;
         }
       }
+    }
+
+    .slide--second {
+      background-position: 55%;
+    }
+
+    .slide--third {
+      background-size: 298% 146%;
+      background-position: 64.5% 10%;
     }
 
     .s-arrow-right {
@@ -99,7 +109,7 @@
 
     .slick-current {
       height: 572px;
-      width: 420px;
+      width: 419px;
       margin: 0 91px;
     }
 

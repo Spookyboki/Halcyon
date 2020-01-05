@@ -104,7 +104,8 @@
       text-align: center;
       height: 100vh;
       z-index: 2;
-      background-color: $grey;
+      background: rgb(99,119,126);
+background: linear-gradient(295deg, rgba(99,119,126,1) 44%, rgba(117,128,130,1) 59%, rgba(98,98,106,1) 79%);
       padding-top: 200px;
 
       li {

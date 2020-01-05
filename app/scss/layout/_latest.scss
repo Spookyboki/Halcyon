@@ -12,7 +12,7 @@
   .slide {
     width: 670px;
     height: 501px;
-    background-position: center;
+    background-position: 77% center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 30px;
@@ -86,12 +86,12 @@
 
   .s-arrow-right {
     position: absolute;
-    right: 42px;
+    right: 44px;
     top: 36%;
-    z-index: 5;
+    z-index: 1;
     font-size: 13px;
     font-size: 25px;
-    padding: 20px 24px 23px 23px;
+    padding: 16px 24px 24px 23px;
     background-color: $white;
 
     &:hover {
@@ -102,11 +102,11 @@
 
   .s-arrow-left {
     position: absolute;
-    left: 42px;
-    top: 36%;
-    z-index: 5;
+    left: 40px;
+    top: 35.5%;
+    z-index: 1;
     font-size: 25px;
-    padding: 20px 23px 23px 24px;
+    padding: 20px 23px 22px 24px;
     background-color: $white;
 
     &:hover {
@@ -120,18 +120,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
   }
 
   .block__btn {
     background-color: $blue;
     color: $white;
-    padding: 14px 90px 15px 19px;
+    padding: 13px 88px 14px 19px;
+    margin-top: -3px;
 
     .block__btn__line {
-      width: 43px;
+      width: 45px;
       background-color: $white;
-      left: 111px;
+      left: 112px;
+      top: 20px;
     }
   }
 
@@ -176,16 +178,10 @@
     }
 
     .s-arrow-right {
-      /* top: 5%;
-      right: 20px;
-      padding: 1px 24px 5px 23px; */
       display: none;
     }
 
     .s-arrow-left {
-      /* top: 5%;
-      left: 20px;
-      padding: 1px 23px 5px 24px; */
       display: none;
     }
 
@@ -197,7 +193,8 @@
       .block__latest__slider__info {
         width: 100%;
 
-        .block__latest__slider__text {
+        .block__latest__slider__text,
+        .block__latest__slider__price {
           font-size: 12px;
         }
       }
@@ -225,7 +222,7 @@
 }
 
 .block__latest__wrapper {
-  padding: 0 273px;
+  padding: 0 276px 0 273px;
 
   @media screen and (max-width: 1322px){
     padding: 0 140px;

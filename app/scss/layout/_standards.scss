@@ -21,19 +21,20 @@
   h1 {
     color: $white;
     padding-top: 132px;
-    padding-bottom: 59px;
+    padding-bottom: 58px;
     font-size: 48px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding-left: 63px;
-    width: 90%;
+    width: 91%;
     line-height: 1.2;
+    letter-spacing: 0.002em;
   }
 
   .block__btn {
     background-color: $white;
     color: $black;
-    padding: 12px 62px 15px 18px;
+    padding: 12px 63px 15px 18px;
     margin-left: 65px;
 
     .block__btn__line {
@@ -91,7 +92,7 @@
 
   @include breakpoint (phone) {
     padding-top: 0;
-    height: 530px;
+    height: 450px;
     margin-bottom: 0px;
 
     .block__standrads__wrapper {
@@ -101,6 +102,7 @@
     .block__left {
       margin-right: 0;
       padding-bottom: 58px;
+      width: 100%;
     }
 
     .block__box {

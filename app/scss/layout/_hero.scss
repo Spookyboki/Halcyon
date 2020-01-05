@@ -2,6 +2,7 @@
   height: 970px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: -2px;
 
   .block__hero__wrapper {
     padding: 0 273px;
@@ -10,13 +11,13 @@
   .block__btn {
     background-color: $blue;
     color: $white;
-    padding: 13px 73px 15px 25px;
+    padding: 11px 73px 15px 25px;
     word-spacing: 0.16em;
     margin-left: 3px;
 
     .block__btn__line {
       background-color: $white;
-      top: 22px;
+      top: 21px;
       left: 144px;
     }
   }
@@ -88,6 +89,7 @@
 
     h3 {
       font-size: 16px;
+      text-align: center;
     }
 
     .block__box {
@@ -97,7 +99,10 @@
     .block__btn {
       padding: 11px 73px 13px 25px;
       font-size: 14px;
-  
+      display: block;
+      margin: 0 auto;
+      width: 190px;
+
       .block__btn__line {
         top: 19px;
       }
