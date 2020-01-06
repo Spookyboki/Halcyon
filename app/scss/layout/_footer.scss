@@ -37,17 +37,17 @@
     }
 
     &:nth-child(2) {
-      padding-right: 173px;
+      padding-right: 134px;
       margin-top: -1px;
     }
 
     &:nth-child(3) {
-      padding-right: 92px;
+      padding-right: 91px;
       margin-top: -1px;
     }
 
     &:nth-child(4) {
-      padding-right: 124px;
+      padding-right: 126px;
     }
   }
 
@@ -92,7 +92,7 @@
 
     button {
       position: absolute;
-      top: 1px;
+      top: -1px;
       right: -58px;
       font-size: 14px;
       font-family: 'Lato', sans-serif;
@@ -100,7 +100,7 @@
       background-color: $black;
       font-weight: bold;
       text-transform: uppercase;
-      padding: 12px 11px 16px;
+      padding: 11px 10px 16px 13px;
     }
   }
 
@@ -254,6 +254,13 @@
         margin-top: 40px;
       }
     }
+
+    form {
+
+      button {
+        top: -1px;
+      }
+    }
   }
 
   @include breakpoint (phone) {
@@ -269,6 +276,14 @@
 
     .footer__list-class {
       padding-bottom: 10px;
+    }
+
+    form {
+
+      button {
+        top: 0;
+        padding: 11px 10px 15px 13px;
+      }
     }
 
     .footer__nav {
@@ -297,18 +312,11 @@
       }
     }
   }
-
-  form {
-
-    button {
-      top: 0;
-      padding: 11px 11px 15px;
-    }
-  }
 }
 
 .footer__list-class--wider {
   width: 150%;
+  margin-left: 2px;
 
   @media screen and (max-width: 1630px) {
     width: 100%;
